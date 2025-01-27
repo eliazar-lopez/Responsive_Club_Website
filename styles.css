@@ -1,0 +1,172 @@
+/* Global Styles */
+html {
+    font-size: 16px; /* Sets 1rem = 16px */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #181818;
+    color: #fff;
+    line-height: 1.5;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ffcc00;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0.5rem 0;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    padding: 1rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+header nav ul li {
+    font-size: 1.2rem;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://example.com/your-image.jpg'); /* Replace with a League-related image */
+    background-size: cover;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Section Styles */
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/* Events Section */
+.events ul {
+    margin-top: 1rem;
+}
+
+.events li {
+    font-size: 1.2rem;
+}
+
+/* Footer Section */
+footer {
+    background-color: #222;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    header nav ul li {
+        font-size: 1rem;
+    }
+
+    .events li {
+        font-size: 1rem;
+    }
+
+    .members ul li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Stacking layout for smaller screens */
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* For very small screens (mobile phones) */
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .events ul li {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}
